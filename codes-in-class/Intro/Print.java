@@ -11,5 +11,7 @@ public class Print {
         System.out.println("Digite seu nome: ");
         nome = input.nextLine();
         System.out.println("Seu nome é: " + nome);
+
+        input.close();
     }
 }
