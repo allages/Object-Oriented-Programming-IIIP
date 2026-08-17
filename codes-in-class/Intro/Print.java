@@ -2,6 +2,10 @@ package Intro;
 import java.util.Scanner;
 
 public class Print {
+
+    public static String gerarCpf(){
+    
+}
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
@@ -12,6 +16,7 @@ public class Print {
         nome = input.nextLine();
         System.out.println("Seu nome é: " + nome);
 
+        // Testando laços de repetição
         int idade;
         System.out.println("Digite sua idade: ");
         idade = input.nextInt();
