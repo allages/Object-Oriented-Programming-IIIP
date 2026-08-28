@@ -11,4 +11,12 @@ public class Aluno{
         this.idade = idade;
         this.matricula = matricula;
     }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public void setNome(string nome){
+        this.nome = nome;
+    }
 }
