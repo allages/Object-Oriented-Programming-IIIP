@@ -1,7 +1,7 @@
 package Exercicio1;
 
 public class Aluno{
-    String nome;
+    private String nome;
     private int idade;
     private int matricula;
     private boolean[] presenca = new boolean[10];
@@ -16,7 +16,7 @@ public class Aluno{
         return nome;
     }
 
-    public void setNome(string nome){
+    public void setNome(String nome){
         this.nome = nome;
     }
 
@@ -28,7 +28,7 @@ public class Aluno{
         this.idade = idade;
     }
 
-    publlic int getMatricula(){
+    public int getMatricula(){
         return matricula;
     }
 
