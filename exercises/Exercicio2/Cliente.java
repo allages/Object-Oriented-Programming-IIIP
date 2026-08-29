@@ -56,4 +56,12 @@ public class Cliente {
         }
     }
 
+    public double comprar(){
+        double total = 0.0;
+        for (int i = 0; i < this.carrinho.length && this.carrinho[i] != null; i+=1) {
+
+        }
+        return total;
+    }
+
 }
