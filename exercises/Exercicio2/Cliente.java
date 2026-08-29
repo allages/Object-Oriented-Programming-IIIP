@@ -43,4 +43,17 @@ public class Cliente {
         return "O carrinho está cheio!";
     }
 
+    public void removerProduto(int posicao) {
+        if (posicao < 0 || posicao >= carrinho.length) {
+            return;
+        }
+
+        this.carrinho[posicao] = null;
+
+        for (int i = posicao; i < carrinho.length - 1; i+=1) {
+            this.carrinho[i] = this.carrinho[i + 1];
+            this.carrinho[i + 1] = null;
+        }
+    }
+
 }
