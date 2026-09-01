@@ -56,12 +56,16 @@ public class Cliente {
         }
     }
 
-    public double comprar(){
+    public String comprar(){
         double total = 0.0;
-        for (int i = 0; i < this.carrinho.length && this.carrinho[i] != null; i+=1) {
-
+        for(Produto p : carrinho){
+            total += p.getPreco();
         }
-        return total;
+        if(this.vip == true){
+            total = total * 0.90;
+        }
+        String resultado = String.format("O valor total da compra foi = R$%.2f", total);
+        return resultado;
     }
 
 }
