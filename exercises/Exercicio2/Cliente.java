@@ -3,12 +3,11 @@ package Exercicio2;
 public class Cliente {
     private String nome;
     private boolean vip;
-    private Produto[] carrinho;
+    private Produto[] carrinho = new Produto[10];
 
-    public Cliente(String nome, boolean vip, Produto[] carrinho) {
+    public Cliente(String nome, boolean vip) {
         this.nome = nome;
         this.vip = vip;
-        this.carrinho = new Produto[10];
     }
 
     public String getNome() {
@@ -58,8 +57,10 @@ public class Cliente {
 
     public String comprar(){
         double total = 0.0;
-        for(Produto p : carrinho){
-            total += p.getPreco();
+        for(Produto p : carrinho) {
+            if (p != null) {
+                total += p.getPreco();
+            }
         }
         if(this.vip == true){
             total = total * 0.90;
